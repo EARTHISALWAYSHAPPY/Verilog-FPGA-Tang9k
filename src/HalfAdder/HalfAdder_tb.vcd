@@ -1,0 +1,44 @@
+$date
+	Mon Apr 28 15:32:41 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module HalfAdder_tb $end
+$var wire 1 ! oSum $end
+$var wire 1 " oCarry $end
+$var reg 1 # iAddend $end
+$var reg 1 $ iAugend $end
+$scope module dut $end
+$var wire 1 # iAddend $end
+$var wire 1 $ iAugend $end
+$var wire 1 " oCarry $end
+$var wire 1 ! oSum $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1$
+0#
+0"
+1!
+$end
+#10000
+0!
+1"
+1#
+#20000
+1!
+0"
+0$
+#30000
+0!
+0#
+#40000

@@ -1,0 +1,64 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000002a6118d9c50 .scope module, "HalfAdder_tb" "HalfAdder_tb" 2 5;
+ .timescale -9 -12;
+v000002a6119258b0_0 .var "iAddend", 0 0;
+v000002a611925950_0 .var "iAugend", 0 0;
+v000002a6118dbc90_0 .net "oCarry", 0 0, L_000002a6118d8e20;  1 drivers
+v000002a6118dbd30_0 .net "oSum", 0 0, L_000002a6119259f0;  1 drivers
+S_000002a6119255e0 .scope module, "dut" "HalfAdder" 2 17, 3 1 0, S_000002a6118d9c50;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "iAugend";
+    .port_info 1 /INPUT 1 "iAddend";
+    .port_info 2 /OUTPUT 1 "oSum";
+    .port_info 3 /OUTPUT 1 "oCarry";
+L_000002a6119259f0 .functor XOR 1, v000002a611925950_0, v000002a6119258b0_0, C4<0>, C4<0>;
+L_000002a6118d8e20 .functor AND 1, v000002a611925950_0, v000002a6119258b0_0, C4<1>, C4<1>;
+v000002a6118d8d80_0 .net "iAddend", 0 0, v000002a6119258b0_0;  1 drivers
+v000002a6118d6900_0 .net "iAugend", 0 0, v000002a611925950_0;  1 drivers
+v000002a611925770_0 .net "oCarry", 0 0, L_000002a6118d8e20;  alias, 1 drivers
+v000002a611925810_0 .net "oSum", 0 0, L_000002a6119259f0;  alias, 1 drivers
+    .scope S_000002a6118d9c50;
+T_0 ;
+    %vpi_call 2 28 "$dumpfile", "HalfAdder_tb.vcd" {0 0 0};
+    %vpi_call 2 29 "$dumpvars", 32'sb00000000000000000000000000000000, S_000002a6118d9c50 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002a611925950_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a6119258b0_0, 0, 1;
+    %delay 10000, 0;
+    %vpi_call 2 36 "$display", "Test Case 1: iAugend = %b, iAddend = %b, oSum = %b, oCarry = %b", v000002a611925950_0, v000002a6119258b0_0, v000002a6118dbd30_0, v000002a6118dbc90_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002a611925950_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002a6119258b0_0, 0, 1;
+    %delay 10000, 0;
+    %vpi_call 2 44 "$display", "Test Case 2: iAugend = %b, iAddend = %b, oSum = %b, oCarry = %b", v000002a611925950_0, v000002a6119258b0_0, v000002a6118dbd30_0, v000002a6118dbc90_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a611925950_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002a6119258b0_0, 0, 1;
+    %delay 10000, 0;
+    %vpi_call 2 52 "$display", "Test Case 3: iAugend = %b, iAddend = %b, oSum = %b, oCarry = %b", v000002a611925950_0, v000002a6119258b0_0, v000002a6118dbd30_0, v000002a6118dbc90_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a611925950_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a6119258b0_0, 0, 1;
+    %delay 10000, 0;
+    %vpi_call 2 60 "$display", "Test Case 4: iAugend = %b, iAddend = %b, oSum = %b, oCarry = %b", v000002a611925950_0, v000002a6119258b0_0, v000002a6118dbd30_0, v000002a6118dbc90_0 {0 0 0};
+    %vpi_call 2 63 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "HalfAdder_tb.v";
+    "./HalfAdder.v";
