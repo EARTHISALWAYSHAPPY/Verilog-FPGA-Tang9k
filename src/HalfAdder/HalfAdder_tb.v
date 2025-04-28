@@ -1,3 +1,5 @@
+//tb file from GPT
+
 `timescale 1ns / 1ps
 `include "HalfAdder.v"  
 
@@ -46,7 +48,7 @@ module HalfAdder_tb;
 
     // Test case 3: iAugend = 0, iAddend = 1
 
-    iAugend = 0;
+    iAugend = 0; 
     iAddend = 1;
     #10;
     $display("Test Case 3: iAugend = %b, iAddend = %b, oSum = %b, oCarry = %b", iAugend, iAddend,
