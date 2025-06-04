@@ -13,7 +13,7 @@ module Blinker (
         rCnt <= 3'd0;
     end
     else begin
-        rCnt <= rCnt 3'd1;
+        rCnt <= rCnt + 3'd1;
     end
     end
 
