@@ -1,25 +1,25 @@
 [
  {
-  "InstFile" : "D:/Work/Tang 9k/TangNano-9K-example-main/TangNano-9K-example-main/uart/src/uart_top.v",
+  "InstFile" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/Example_From_sipeed/TangNano-9K-example-main/uart/src/uart_top.v",
   "InstLine" : 1,
   "InstName" : "uart_test",
-  "ModuleFile" : "D:/Work/Tang 9k/TangNano-9K-example-main/TangNano-9K-example-main/uart/src/uart_top.v",
+  "ModuleFile" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/Example_From_sipeed/TangNano-9K-example-main/uart/src/uart_top.v",
   "ModuleLine" : 1,
   "ModuleName" : "uart_test",
   "SubInsts" : [
    {
-    "InstFile" : "D:/Work/Tang 9k/TangNano-9K-example-main/TangNano-9K-example-main/uart/src/uart_top.v",
+    "InstFile" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/Example_From_sipeed/TangNano-9K-example-main/uart/src/uart_top.v",
     "InstLine" : 112,
     "InstName" : "uart_rx_inst",
-    "ModuleFile" : "D:/Work/Tang 9k/TangNano-9K-example-main/TangNano-9K-example-main/uart/src/uart_rx.v",
+    "ModuleFile" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/Example_From_sipeed/TangNano-9K-example-main/uart/src/uart_rx.v",
     "ModuleLine" : 1,
     "ModuleName" : "uart_rx"
    },
    {
-    "InstFile" : "D:/Work/Tang 9k/TangNano-9K-example-main/TangNano-9K-example-main/uart/src/uart_top.v",
+    "InstFile" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/Example_From_sipeed/TangNano-9K-example-main/uart/src/uart_top.v",
     "InstLine" : 126,
     "InstName" : "uart_tx_inst",
-    "ModuleFile" : "D:/Work/Tang 9k/TangNano-9K-example-main/TangNano-9K-example-main/uart/src/uart_tx.v",
+    "ModuleFile" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/Example_From_sipeed/TangNano-9K-example-main/uart/src/uart_tx.v",
     "ModuleLine" : 1,
     "ModuleName" : "uart_tx"
    }

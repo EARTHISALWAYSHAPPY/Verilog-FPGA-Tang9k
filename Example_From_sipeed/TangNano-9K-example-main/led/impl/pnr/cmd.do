@@ -1,8 +1,8 @@
--d D:\Work\Tang 9k\TangNano-9K-example-main\TangNano-9K-example-main\led\impl\gwsynthesis\9K_LED_project.vg
+-d D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\Example_From_sipeed\TangNano-9K-example-main\led\impl\gwsynthesis\9K_LED_project.vg
 -p GW1NR-9C-QFN88P-6
 -pn GW1NR-LV9QN88PC6/I5
--cst D:\Work\Tang 9k\TangNano-9K-example-main\TangNano-9K-example-main\led\src\9K_LED_project.cst
--cfg D:\Work\Tang 9k\TangNano-9K-example-main\TangNano-9K-example-main\led\impl\pnr\device.cfg
+-cst D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\Example_From_sipeed\TangNano-9K-example-main\led\src\9K_LED_project.cst
+-cfg D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\Example_From_sipeed\TangNano-9K-example-main\led\impl\pnr\device.cfg
 -bit
 -tr
 -ph

@@ -2,15 +2,15 @@
  "Device" : "GW1NR-9C",
  "Files" : [
   {
-   "Path" : "D:/Work/Tang 9k/TangNano-9K-example-main/TangNano-9K-example-main/uart/src/uart_rx.v",
+   "Path" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/Example_From_sipeed/TangNano-9K-example-main/uart/src/uart_rx.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/Work/Tang 9k/TangNano-9K-example-main/TangNano-9K-example-main/uart/src/uart_top.v",
+   "Path" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/Example_From_sipeed/TangNano-9K-example-main/uart/src/uart_top.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/Work/Tang 9k/TangNano-9K-example-main/TangNano-9K-example-main/uart/src/uart_tx.v",
+   "Path" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/Example_From_sipeed/TangNano-9K-example-main/uart/src/uart_tx.v",
    "Type" : "verilog"
   }
  ],
@@ -18,7 +18,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "D:/Work/Tang 9k/TangNano-9K-example-main/TangNano-9K-example-main/uart/impl/temp/rtl_parser.result",
+ "ResultFile" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/Example_From_sipeed/TangNano-9K-example-main/uart/impl/temp/rtl_parser.result",
  "Top" : "",
  "VerilogStd" : "verilog_2001",
  "VhdlStd" : "vhdl_93"

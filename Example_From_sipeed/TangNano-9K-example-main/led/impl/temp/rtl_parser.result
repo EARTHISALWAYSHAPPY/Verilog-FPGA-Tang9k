@@ -1,9 +1,9 @@
 [
  {
-  "InstFile" : "D:/Work/Tang 9k/TangNano-9K-example-main/TangNano-9K-example-main/led/src/LED.v",
+  "InstFile" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/Example_From_sipeed/TangNano-9K-example-main/led/src/LED.v",
   "InstLine" : 1,
   "InstName" : "led",
-  "ModuleFile" : "D:/Work/Tang 9k/TangNano-9K-example-main/TangNano-9K-example-main/led/src/LED.v",
+  "ModuleFile" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/Example_From_sipeed/TangNano-9K-example-main/led/src/LED.v",
   "ModuleLine" : 1,
   "ModuleName" : "led"
  }

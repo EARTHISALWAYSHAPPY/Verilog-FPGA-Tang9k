@@ -2,7 +2,7 @@
  "Device" : "GW1NR-9C",
  "Files" : [
   {
-   "Path" : "D:/Work/Tang 9k/TangNano-9K-example-main/TangNano-9K-example-main/led/src/LED.v",
+   "Path" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/Example_From_sipeed/TangNano-9K-example-main/led/src/LED.v",
    "Type" : "verilog"
   }
  ],
@@ -10,7 +10,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "D:/Work/Tang 9k/TangNano-9K-example-main/TangNano-9K-example-main/led/impl/temp/rtl_parser.result",
+ "ResultFile" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/Example_From_sipeed/TangNano-9K-example-main/led/impl/temp/rtl_parser.result",
  "Top" : "",
  "VerilogStd" : "verilog_2001",
  "VhdlStd" : "vhdl_93"
