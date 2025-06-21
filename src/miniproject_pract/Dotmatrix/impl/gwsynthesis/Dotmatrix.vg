@@ -1,0 +1,117 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.11.02 (64-bit)"
+//Sun Jun 22 06:19:58 2025
+
+//Source file index table:
+//file0 "\D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/src/miniproject_pract/Dotmatrix/src/Top.v"
+`timescale 100 ps/100 ps
+module Top (
+  CLK,
+  RESETn,
+  Row_LED,
+  Col_LED
+)
+;
+input CLK;
+input RESETn;
+output [7:0] Row_LED;
+output [7:0] Col_LED;
+wire CLK_d;
+wire RESETn_d;
+wire n6_7;
+wire [7:7] Col_LED_d;
+wire VCC;
+wire GND;
+  IBUF CLK_ibuf (
+    .O(CLK_d),
+    .I(CLK) 
+);
+  IBUF RESETn_ibuf (
+    .O(RESETn_d),
+    .I(RESETn) 
+);
+  OBUF Row_LED_0_obuf (
+    .O(Row_LED[0]),
+    .I(GND) 
+);
+  OBUF Row_LED_1_obuf (
+    .O(Row_LED[1]),
+    .I(GND) 
+);
+  OBUF Row_LED_2_obuf (
+    .O(Row_LED[2]),
+    .I(GND) 
+);
+  OBUF Row_LED_3_obuf (
+    .O(Row_LED[3]),
+    .I(GND) 
+);
+  OBUF Row_LED_4_obuf (
+    .O(Row_LED[4]),
+    .I(GND) 
+);
+  OBUF Row_LED_5_obuf (
+    .O(Row_LED[5]),
+    .I(GND) 
+);
+  OBUF Row_LED_6_obuf (
+    .O(Row_LED[6]),
+    .I(GND) 
+);
+  OBUF Row_LED_7_obuf (
+    .O(Row_LED[7]),
+    .I(GND) 
+);
+  OBUF Col_LED_0_obuf (
+    .O(Col_LED[0]),
+    .I(Col_LED_d[7]) 
+);
+  OBUF Col_LED_1_obuf (
+    .O(Col_LED[1]),
+    .I(Col_LED_d[7]) 
+);
+  OBUF Col_LED_2_obuf (
+    .O(Col_LED[2]),
+    .I(Col_LED_d[7]) 
+);
+  OBUF Col_LED_3_obuf (
+    .O(Col_LED[3]),
+    .I(Col_LED_d[7]) 
+);
+  OBUF Col_LED_4_obuf (
+    .O(Col_LED[4]),
+    .I(Col_LED_d[7]) 
+);
+  OBUF Col_LED_5_obuf (
+    .O(Col_LED[5]),
+    .I(Col_LED_d[7]) 
+);
+  OBUF Col_LED_6_obuf (
+    .O(Col_LED[6]),
+    .I(Col_LED_d[7]) 
+);
+  OBUF Col_LED_7_obuf (
+    .O(Col_LED[7]),
+    .I(Col_LED_d[7]) 
+);
+  DFFC rCol_LED_7_s0 (
+    .Q(Col_LED_d[7]),
+    .D(VCC),
+    .CLK(CLK_d),
+    .CLEAR(n6_7) 
+);
+  INV n6_s2 (
+    .O(n6_7),
+    .I(RESETn_d) 
+);
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* Top */
