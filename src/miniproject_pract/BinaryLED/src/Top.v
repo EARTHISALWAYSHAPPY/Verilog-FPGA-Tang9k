@@ -3,7 +3,7 @@ module BinaryLED (
     input RESETn,
     output wire [5:0] oled
 );
-  localparam Timedelay = 25'd26_999_999;
+  localparam Timedelay = 25'd26999999;
   // what time I need = Clock cyc. / Sys. Freq. (27MHz.)
   reg [24:0] rCnt;
   reg [ 5:0] rled;

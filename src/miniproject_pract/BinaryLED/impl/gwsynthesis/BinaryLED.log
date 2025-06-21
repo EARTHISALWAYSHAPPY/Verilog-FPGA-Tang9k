@@ -2,8 +2,8 @@ GowinSynthesis start
 Running parser ...
 Analyzing Verilog file 'D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\BinaryLED\src\Top.v'
 Compiling module 'BinaryLED'("D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\BinaryLED\src\Top.v":1)
-WARN  (EX3791) : Expression size 26 truncated to fit in target size 25("D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\BinaryLED\src\Top.v":15)
-WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\BinaryLED\src\Top.v":28)
+WARN  (EX3791) : Expression size 26 truncated to fit in target size 25("D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\BinaryLED\src\Top.v":16)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\BinaryLED\src\Top.v":29)
 NOTE  (EX0101) : Current top module is "BinaryLED"
 [5%] Running netlist conversion ...
 Running device independent optimization ...
