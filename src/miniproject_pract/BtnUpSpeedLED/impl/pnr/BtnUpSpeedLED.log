@@ -1,7 +1,7 @@
-Reading netlist file: "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\BtnUpSpeedLED\impl\gwsynthesis\BtnUpSpeedLED.vg"
-Parsing netlist file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\BtnUpSpeedLED\impl\gwsynthesis\BtnUpSpeedLED.vg" completed
+Reading netlist file: "D:\Work\Tang 9k\src\miniproject_pract\BtnUpSpeedLED\impl\gwsynthesis\BtnUpSpeedLED.vg"
+Parsing netlist file "D:\Work\Tang 9k\src\miniproject_pract\BtnUpSpeedLED\impl\gwsynthesis\BtnUpSpeedLED.vg" completed
 Processing netlist completed
-Reading constraint file: "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\BtnUpSpeedLED\src\BtnUpSpeedLED.cst"
+Reading constraint file: "D:\Work\Tang 9k\src\miniproject_pract\BtnUpSpeedLED\src\BtnUpSpeedLED.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
@@ -21,10 +21,10 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\BtnUpSpeedLED\impl\pnr\BtnUpSpeedLED.power.html" completed
-Generate file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\BtnUpSpeedLED\impl\pnr\BtnUpSpeedLED.pin.html" completed
-Generate file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\BtnUpSpeedLED\impl\pnr\BtnUpSpeedLED.rpt.html" completed
-Generate file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\BtnUpSpeedLED\impl\pnr\BtnUpSpeedLED.rpt.txt" completed
-Generate file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\BtnUpSpeedLED\impl\pnr\BtnUpSpeedLED.tr.html" completed
-Tue Jul  1 21:50:03 2025
+Generate file "D:\Work\Tang 9k\src\miniproject_pract\BtnUpSpeedLED\impl\pnr\BtnUpSpeedLED.power.html" completed
+Generate file "D:\Work\Tang 9k\src\miniproject_pract\BtnUpSpeedLED\impl\pnr\BtnUpSpeedLED.pin.html" completed
+Generate file "D:\Work\Tang 9k\src\miniproject_pract\BtnUpSpeedLED\impl\pnr\BtnUpSpeedLED.rpt.html" completed
+Generate file "D:\Work\Tang 9k\src\miniproject_pract\BtnUpSpeedLED\impl\pnr\BtnUpSpeedLED.rpt.txt" completed
+Generate file "D:\Work\Tang 9k\src\miniproject_pract\BtnUpSpeedLED\impl\pnr\BtnUpSpeedLED.tr.html" completed
+Thu Jul  3 14:44:51 2025
 

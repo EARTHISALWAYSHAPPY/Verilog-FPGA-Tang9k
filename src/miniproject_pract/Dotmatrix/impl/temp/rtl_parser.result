@@ -1,9 +1,9 @@
 [
  {
-  "InstFile" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/src/miniproject_pract/Dotmatrix/src/Top.v",
+  "InstFile" : "D:/Work/Tang 9k/src/miniproject_pract/Dotmatrix/src/Top.v",
   "InstLine" : 1,
   "InstName" : "Top",
-  "ModuleFile" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/src/miniproject_pract/Dotmatrix/src/Top.v",
+  "ModuleFile" : "D:/Work/Tang 9k/src/miniproject_pract/Dotmatrix/src/Top.v",
   "ModuleLine" : 1,
   "ModuleName" : "Top"
  }

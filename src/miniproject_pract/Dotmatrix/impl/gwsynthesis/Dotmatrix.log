@@ -1,8 +1,8 @@
 GowinSynthesis start
 Running parser ...
-Analyzing Verilog file 'D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Dotmatrix\src\Top.v'
-Compiling module 'Top'("D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Dotmatrix\src\Top.v":1)
-Extracting RAM for identifier 'char_a'("D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Dotmatrix\src\Top.v":17)
+Analyzing Verilog file 'D:\Work\Tang 9k\src\miniproject_pract\Dotmatrix\src\Top.v'
+Compiling module 'Top'("D:\Work\Tang 9k\src\miniproject_pract\Dotmatrix\src\Top.v":1)
+Extracting RAM for identifier 'char_a'("D:\Work\Tang 9k\src\miniproject_pract\Dotmatrix\src\Top.v":17)
 NOTE  (EX0101) : Current top module is "Top"
 [5%] Running netlist conversion ...
 Running device independent optimization ...
@@ -20,6 +20,6 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-[95%] Generate netlist file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Dotmatrix\impl\gwsynthesis\Dotmatrix.vg" completed
-[100%] Generate report file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Dotmatrix\impl\gwsynthesis\Dotmatrix_syn.rpt.html" completed
+[95%] Generate netlist file "D:\Work\Tang 9k\src\miniproject_pract\Dotmatrix\impl\gwsynthesis\Dotmatrix.vg" completed
+[100%] Generate report file "D:\Work\Tang 9k\src\miniproject_pract\Dotmatrix\impl\gwsynthesis\Dotmatrix_syn.rpt.html" completed
 GowinSynthesis finish

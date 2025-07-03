@@ -1,8 +1,8 @@
--d D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\BlinkFirstJourney\impl\gwsynthesis\BlinkFirstJourney.vg
+-d D:\Work\Tang 9k\src\miniproject_pract\BlinkFirstJourney\impl\gwsynthesis\BlinkFirstJourney.vg
 -p GW1NR-9C-QFN88P-6
 -pn GW1NR-LV9QN88PC6/I5
--cst D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\BlinkFirstJourney\src\BlinkFirstJourney.cst
--cfg D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\BlinkFirstJourney\impl\pnr\device.cfg
+-cst D:\Work\Tang 9k\src\miniproject_pract\BlinkFirstJourney\src\BlinkFirstJourney.cst
+-cfg D:\Work\Tang 9k\src\miniproject_pract\BlinkFirstJourney\impl\pnr\device.cfg
 -bit
 -tr
 -ph

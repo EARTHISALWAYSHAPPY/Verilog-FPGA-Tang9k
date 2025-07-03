@@ -2,15 +2,15 @@
  "Device" : "GW1NR-9C",
  "Files" : [
   {
-   "Path" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/src/miniproject_pract/BtnUpSpeedLED/src/Btn.v",
+   "Path" : "D:/Work/Tang 9k/src/miniproject_pract/BtnUpSpeedLED/src/Btn.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/src/miniproject_pract/BtnUpSpeedLED/src/LEDDriver.v",
+   "Path" : "D:/Work/Tang 9k/src/miniproject_pract/BtnUpSpeedLED/src/LEDDriver.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/src/miniproject_pract/BtnUpSpeedLED/src/Top.v",
+   "Path" : "D:/Work/Tang 9k/src/miniproject_pract/BtnUpSpeedLED/src/Top.v",
    "Type" : "verilog"
   }
  ],
@@ -18,7 +18,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/src/miniproject_pract/BtnUpSpeedLED/impl/temp/rtl_parser.result",
+ "ResultFile" : "D:/Work/Tang 9k/src/miniproject_pract/BtnUpSpeedLED/impl/temp/rtl_parser.result",
  "Top" : "",
  "VerilogStd" : "verilog_2001",
  "VhdlStd" : "vhdl_93"

@@ -1,8 +1,8 @@
--d D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Dotmatrix\impl\gwsynthesis\Dotmatrix.vg
+-d D:\Work\Tang 9k\src\miniproject_pract\Dotmatrix\impl\gwsynthesis\Dotmatrix.vg
 -p GW1NR-9C-QFN88P-6
 -pn GW1NR-LV9QN88PC6/I5
--cst D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Dotmatrix\src\Dotmatrix.cst
--cfg D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Dotmatrix\impl\pnr\device.cfg
+-cst D:\Work\Tang 9k\src\miniproject_pract\Dotmatrix\src\Dotmatrix.cst
+-cfg D:\Work\Tang 9k\src\miniproject_pract\Dotmatrix\impl\pnr\device.cfg
 -bit
 -tr
 -ph

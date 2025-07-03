@@ -1,7 +1,7 @@
-Reading netlist file: "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Dotmatrix\impl\gwsynthesis\Dotmatrix.vg"
-Parsing netlist file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Dotmatrix\impl\gwsynthesis\Dotmatrix.vg" completed
+Reading netlist file: "D:\Work\Tang 9k\src\miniproject_pract\Dotmatrix\impl\gwsynthesis\Dotmatrix.vg"
+Parsing netlist file "D:\Work\Tang 9k\src\miniproject_pract\Dotmatrix\impl\gwsynthesis\Dotmatrix.vg" completed
 Processing netlist completed
-Reading constraint file: "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Dotmatrix\src\Dotmatrix.cst"
+Reading constraint file: "D:\Work\Tang 9k\src\miniproject_pract\Dotmatrix\src\Dotmatrix.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
@@ -21,10 +21,10 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Dotmatrix\impl\pnr\Dotmatrix.power.html" completed
-Generate file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Dotmatrix\impl\pnr\Dotmatrix.pin.html" completed
-Generate file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Dotmatrix\impl\pnr\Dotmatrix.rpt.html" completed
-Generate file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Dotmatrix\impl\pnr\Dotmatrix.rpt.txt" completed
-Generate file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Dotmatrix\impl\pnr\Dotmatrix.tr.html" completed
-Tue Jun 24 19:07:30 2025
+Generate file "D:\Work\Tang 9k\src\miniproject_pract\Dotmatrix\impl\pnr\Dotmatrix.power.html" completed
+Generate file "D:\Work\Tang 9k\src\miniproject_pract\Dotmatrix\impl\pnr\Dotmatrix.pin.html" completed
+Generate file "D:\Work\Tang 9k\src\miniproject_pract\Dotmatrix\impl\pnr\Dotmatrix.rpt.html" completed
+Generate file "D:\Work\Tang 9k\src\miniproject_pract\Dotmatrix\impl\pnr\Dotmatrix.rpt.txt" completed
+Generate file "D:\Work\Tang 9k\src\miniproject_pract\Dotmatrix\impl\pnr\Dotmatrix.tr.html" completed
+Thu Jul  3 15:30:24 2025
 

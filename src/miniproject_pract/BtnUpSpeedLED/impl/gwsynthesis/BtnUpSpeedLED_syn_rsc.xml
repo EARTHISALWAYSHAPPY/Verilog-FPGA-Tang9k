@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="Top" T_Register="46(0)" T_Alu="15(0)" T_Lut="92(0)">
+<Module name="Top" T_Register="41(0)" T_Alu="8(0)" T_Lut="85(0)">
  <SubModule name="m_btn" Register="3" Lut="1" T_Register="3(3)" T_Lut="1(1)"/>
- <SubModule name="m_timerled" Register="43" Alu="15" Lut="91" T_Register="43(43)" T_Alu="15(15)" T_Lut="91(91)"/>
+ <SubModule name="m_timerled" Register="38" Alu="8" Lut="84" T_Register="38(38)" T_Alu="8(8)" T_Lut="84(84)"/>
 </Module>
