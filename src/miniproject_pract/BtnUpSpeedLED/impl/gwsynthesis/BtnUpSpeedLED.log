@@ -6,7 +6,7 @@ Analyzing Verilog file 'D:\Work\Tang 9k\src\miniproject_pract\BtnUpSpeedLED\src\
 Compiling module 'Top'("D:\Work\Tang 9k\src\miniproject_pract\BtnUpSpeedLED\src\Top.v":1)
 Compiling module 'Btn'("D:\Work\Tang 9k\src\miniproject_pract\BtnUpSpeedLED\src\Btn.v":1)
 Compiling module 'LEDDriver'("D:\Work\Tang 9k\src\miniproject_pract\BtnUpSpeedLED\src\LEDDriver.v":1)
-WARN  (EX3791) : Expression size 27 truncated to fit in target size 26("D:\Work\Tang 9k\src\miniproject_pract\BtnUpSpeedLED\src\LEDDriver.v":39)
+WARN  (EX3791) : Expression size 27 truncated to fit in target size 26("D:\Work\Tang 9k\src\miniproject_pract\BtnUpSpeedLED\src\LEDDriver.v":56)
 NOTE  (EX0101) : Current top module is "Top"
 [5%] Running netlist conversion ...
 Running device independent optimization ...

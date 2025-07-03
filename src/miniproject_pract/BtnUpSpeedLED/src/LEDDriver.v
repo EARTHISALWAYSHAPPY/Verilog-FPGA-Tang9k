@@ -12,23 +12,40 @@ module LEDDriver (
   reg [25:0] rTimedelay;
   reg [25:0] rCnt;
   reg [ 5:0] rLED;
+  reg [ 1:0] sel = 2'd0;
 
-  always @(posedge CLK or negedge RESETn) begin : u_Timdelay
+  // always @(posedge CLK or negedge RESETn) begin : u_Timdelay
+  //   if (RESETn == 1'd0) begin
+  //     rTimedelay <= OneSecond;
+  //   end else begin
+  //     if (iIntBtn == 1'd1) begin
+  //       if (rTimedelay == OneSecond) begin  // 1 -> 0.5
+  //         rTimedelay <= DotFiveSecond;
+  //       end else if (rTimedelay == DotFiveSecond) begin  // 0.5 -> 0.1
+  //         rTimedelay <= DotOneSecond;
+  //       end else if (rTimedelay == DotOneSecond) begin  // 0.1 -> 1
+  //         rTimedelay <= DotFiveSecond;
+  //       end
+  //     end
+  //   end
+  // end
+
+  always @(posedge CLK or negedge RESETn) begin : u_Timdelay_switchcase
     if (RESETn == 1'd0) begin
       rTimedelay <= OneSecond;
     end else begin
       if (iIntBtn == 1'd1) begin
-        if (rTimedelay == OneSecond) begin  // 1 -> 0.5
-          rTimedelay <= DotFiveSecond;
-        end else if (rTimedelay == DotFiveSecond) begin  // 0.5 -> 0.1
-          rTimedelay <= DotOneSecond;
-        end else if (rTimedelay == DotOneSecond) begin  // 0.1 -> 1
-          rTimedelay <= DotFiveSecond;
-        end
+        sel <= (sel < 2'd3) ? sel + 2'd1 : 2'd0;
+      end else begin
+        case (sel)
+          2'd0: rTimedelay <= OneSecond;
+          2'd1: rTimedelay <= DotFiveSecond;
+          2'd2: rTimedelay <= DotOneSecond;
+          default: rTimedelay <= OneSecond;
+        endcase
       end
     end
   end
-
 
   always @(posedge CLK or negedge RESETn) begin : u_rCnt_rLED
     if (RESETn == 1'd0) begin
