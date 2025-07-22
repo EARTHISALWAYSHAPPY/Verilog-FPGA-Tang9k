@@ -1,0 +1,17 @@
+-d D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Rotary_Up_Led\impl\gwsynthesis\Rotary_Up_Led.vg
+-p GW1NR-9C-QFN88P-6
+-pn GW1NR-UV9QN88PC6/I5
+-cst D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Rotary_Up_Led\src\Rotary_Up_Led.cst
+-cfg D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Rotary_Up_Led\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-place_option 0
+-route_option 0
+-clock_route_order 0
+-correct_hold 1
+-route_maxfan 23
+-global_freq 50.000

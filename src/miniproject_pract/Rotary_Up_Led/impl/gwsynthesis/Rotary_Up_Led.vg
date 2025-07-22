@@ -1,0 +1,386 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.11.02 (64-bit)"
+//Tue Jul 22 21:33:14 2025
+
+//Source file index table:
+//file0 "\D:/Work/Tang9k-FPGA/Tang-nano-9K-FPGA/src/miniproject_pract/Rotary_Up_Led/src/Top.v"
+`timescale 100 ps/100 ps
+module Rotary_LED (
+  Fg_Clk,
+  RESETn,
+  Rot_A,
+  Rot_B,
+  oLED,
+  A_Fall,
+  B_Fall
+)
+;
+input Fg_Clk;
+input RESETn;
+input Rot_A;
+input Rot_B;
+output [5:0] oLED;
+output A_Fall;
+output B_Fall;
+wire Fg_Clk_d;
+wire RESETn_d;
+wire Rot_A_d;
+wire Rot_B_d;
+wire A_Fall_d;
+wire B_Fall_d;
+wire Count_5_8;
+wire n41_19;
+wire n43_20;
+wire n40_17;
+wire n35_11;
+wire n35_15;
+wire CW;
+wire CCW;
+wire n63_2;
+wire n63_1_1;
+wire n62_2;
+wire n62_1_1;
+wire n61_2;
+wire n61_1_1;
+wire n60_2;
+wire n60_1_1;
+wire n59_2;
+wire n59_1_1;
+wire n58_2;
+wire n58_1_0_COUT;
+wire n32_6;
+wire CW_5_3;
+wire [2:0] rFlop_Rot_A;
+wire [2:0] rFlop_Rot_B;
+wire [5:0] oLED_d;
+wire [1:0] State;
+wire [5:0] Count;
+wire VCC;
+wire GND;
+  IBUF Fg_Clk_ibuf (
+    .O(Fg_Clk_d),
+    .I(Fg_Clk) 
+);
+  IBUF RESETn_ibuf (
+    .O(RESETn_d),
+    .I(RESETn) 
+);
+  IBUF Rot_A_ibuf (
+    .O(Rot_A_d),
+    .I(Rot_A) 
+);
+  IBUF Rot_B_ibuf (
+    .O(Rot_B_d),
+    .I(Rot_B) 
+);
+  OBUF oLED_0_obuf (
+    .O(oLED[0]),
+    .I(oLED_d[0]) 
+);
+  OBUF oLED_1_obuf (
+    .O(oLED[1]),
+    .I(oLED_d[1]) 
+);
+  OBUF oLED_2_obuf (
+    .O(oLED[2]),
+    .I(oLED_d[2]) 
+);
+  OBUF oLED_3_obuf (
+    .O(oLED[3]),
+    .I(oLED_d[3]) 
+);
+  OBUF oLED_4_obuf (
+    .O(oLED[4]),
+    .I(oLED_d[4]) 
+);
+  OBUF oLED_5_obuf (
+    .O(oLED[5]),
+    .I(oLED_d[5]) 
+);
+  OBUF A_Fall_obuf (
+    .O(A_Fall),
+    .I(A_Fall_d) 
+);
+  OBUF B_Fall_obuf (
+    .O(B_Fall),
+    .I(B_Fall_d) 
+);
+  LUT2 A_Fall_d_s (
+    .F(A_Fall_d),
+    .I0(rFlop_Rot_A[1]),
+    .I1(rFlop_Rot_A[2]) 
+);
+defparam A_Fall_d_s.INIT=4'h4;
+  LUT2 B_Fall_d_s (
+    .F(B_Fall_d),
+    .I0(rFlop_Rot_B[1]),
+    .I1(rFlop_Rot_B[2]) 
+);
+defparam B_Fall_d_s.INIT=4'h4;
+  LUT2 Count_5_s3 (
+    .F(Count_5_8),
+    .I0(CW),
+    .I1(CCW) 
+);
+defparam Count_5_s3.INIT=4'hE;
+  LUT4 n41_s12 (
+    .F(n41_19),
+    .I0(State[1]),
+    .I1(State[0]),
+    .I2(rFlop_Rot_A[1]),
+    .I3(rFlop_Rot_A[2]) 
+);
+defparam n41_s12.INIT=16'h0100;
+  LUT3 n43_s8 (
+    .F(n43_20),
+    .I0(CW),
+    .I1(State[1]),
+    .I2(State[0]) 
+);
+defparam n43_s8.INIT=8'h10;
+  LUT4 n40_s8 (
+    .F(n40_17),
+    .I0(CW),
+    .I1(State[0]),
+    .I2(State[1]),
+    .I3(CCW) 
+);
+defparam n40_s8.INIT=16'hA830;
+  LUT4 n35_s4 (
+    .F(n35_11),
+    .I0(B_Fall_d),
+    .I1(State[0]),
+    .I2(State[1]),
+    .I3(A_Fall_d) 
+);
+defparam n35_s4.INIT=16'hC0CE;
+  LUT4 n35_s6 (
+    .F(n35_15),
+    .I0(A_Fall_d),
+    .I1(B_Fall_d),
+    .I2(State[0]),
+    .I3(State[1]) 
+);
+defparam n35_s6.INIT=16'h0CAF;
+  DFFP rFlop_Rot_A_1_s0 (
+    .Q(rFlop_Rot_A[1]),
+    .D(rFlop_Rot_A[0]),
+    .CLK(Fg_Clk_d),
+    .PRESET(n32_6) 
+);
+  DFFP rFlop_Rot_A_0_s0 (
+    .Q(rFlop_Rot_A[0]),
+    .D(Rot_A_d),
+    .CLK(Fg_Clk_d),
+    .PRESET(n32_6) 
+);
+  DFFP rFlop_Rot_B_2_s0 (
+    .Q(rFlop_Rot_B[2]),
+    .D(rFlop_Rot_B[1]),
+    .CLK(Fg_Clk_d),
+    .PRESET(n32_6) 
+);
+  DFFP rFlop_Rot_B_1_s0 (
+    .Q(rFlop_Rot_B[1]),
+    .D(rFlop_Rot_B[0]),
+    .CLK(Fg_Clk_d),
+    .PRESET(n32_6) 
+);
+  DFFP rFlop_Rot_B_0_s0 (
+    .Q(rFlop_Rot_B[0]),
+    .D(Rot_B_d),
+    .CLK(Fg_Clk_d),
+    .PRESET(n32_6) 
+);
+  DFFC rLED_5_s0 (
+    .Q(oLED_d[5]),
+    .D(Count[5]),
+    .CLK(Fg_Clk_d),
+    .CLEAR(n32_6) 
+);
+  DFFC rLED_4_s0 (
+    .Q(oLED_d[4]),
+    .D(Count[4]),
+    .CLK(Fg_Clk_d),
+    .CLEAR(n32_6) 
+);
+  DFFC rLED_3_s0 (
+    .Q(oLED_d[3]),
+    .D(Count[3]),
+    .CLK(Fg_Clk_d),
+    .CLEAR(n32_6) 
+);
+  DFFC rLED_2_s0 (
+    .Q(oLED_d[2]),
+    .D(Count[2]),
+    .CLK(Fg_Clk_d),
+    .CLEAR(n32_6) 
+);
+  DFFC rLED_1_s0 (
+    .Q(oLED_d[1]),
+    .D(Count[1]),
+    .CLK(Fg_Clk_d),
+    .CLEAR(n32_6) 
+);
+  DFFC rLED_0_s0 (
+    .Q(oLED_d[0]),
+    .D(Count[0]),
+    .CLK(Fg_Clk_d),
+    .CLEAR(n32_6) 
+);
+  DFFP rFlop_Rot_A_2_s0 (
+    .Q(rFlop_Rot_A[2]),
+    .D(rFlop_Rot_A[1]),
+    .CLK(Fg_Clk_d),
+    .PRESET(n32_6) 
+);
+  DFFCE State_1_s1 (
+    .Q(State[1]),
+    .D(n41_19),
+    .CLK(Fg_Clk_d),
+    .CE(n35_15),
+    .CLEAR(n32_6) 
+);
+defparam State_1_s1.INIT=1'b0;
+  DFFCE Count_5_s1 (
+    .Q(Count[5]),
+    .D(n58_2),
+    .CLK(Fg_Clk_d),
+    .CE(Count_5_8),
+    .CLEAR(n32_6) 
+);
+defparam Count_5_s1.INIT=1'b0;
+  DFFCE Count_4_s1 (
+    .Q(Count[4]),
+    .D(n59_2),
+    .CLK(Fg_Clk_d),
+    .CE(Count_5_8),
+    .CLEAR(n32_6) 
+);
+defparam Count_4_s1.INIT=1'b0;
+  DFFCE Count_3_s1 (
+    .Q(Count[3]),
+    .D(n60_2),
+    .CLK(Fg_Clk_d),
+    .CE(Count_5_8),
+    .CLEAR(n32_6) 
+);
+defparam Count_3_s1.INIT=1'b0;
+  DFFCE Count_2_s1 (
+    .Q(Count[2]),
+    .D(n61_2),
+    .CLK(Fg_Clk_d),
+    .CE(Count_5_8),
+    .CLEAR(n32_6) 
+);
+defparam Count_2_s1.INIT=1'b0;
+  DFFCE Count_1_s1 (
+    .Q(Count[1]),
+    .D(n62_2),
+    .CLK(Fg_Clk_d),
+    .CE(Count_5_8),
+    .CLEAR(n32_6) 
+);
+defparam Count_1_s1.INIT=1'b0;
+  DFFCE Count_0_s1 (
+    .Q(Count[0]),
+    .D(n63_2),
+    .CLK(Fg_Clk_d),
+    .CE(Count_5_8),
+    .CLEAR(n32_6) 
+);
+defparam Count_0_s1.INIT=1'b0;
+  DFFC CW_s4 (
+    .Q(CW),
+    .D(n43_20),
+    .CLK(Fg_Clk_d),
+    .CLEAR(n32_6) 
+);
+defparam CW_s4.INIT=1'b0;
+  DFFC CCW_s4 (
+    .Q(CCW),
+    .D(n40_17),
+    .CLK(Fg_Clk_d),
+    .CLEAR(n32_6) 
+);
+defparam CCW_s4.INIT=1'b0;
+  DFFC State_0_s2 (
+    .Q(State[0]),
+    .D(n35_11),
+    .CLK(Fg_Clk_d),
+    .CLEAR(n32_6) 
+);
+defparam State_0_s2.INIT=1'b0;
+  ALU n63_1_s (
+    .SUM(n63_2),
+    .COUT(n63_1_1),
+    .I0(Count[0]),
+    .I1(VCC),
+    .I3(CW),
+    .CIN(CW_5_3) 
+);
+defparam n63_1_s.ALU_MODE=2;
+  ALU n62_1_s (
+    .SUM(n62_2),
+    .COUT(n62_1_1),
+    .I0(Count[1]),
+    .I1(GND),
+    .I3(CW),
+    .CIN(n63_1_1) 
+);
+defparam n62_1_s.ALU_MODE=2;
+  ALU n61_1_s (
+    .SUM(n61_2),
+    .COUT(n61_1_1),
+    .I0(Count[2]),
+    .I1(GND),
+    .I3(CW),
+    .CIN(n62_1_1) 
+);
+defparam n61_1_s.ALU_MODE=2;
+  ALU n60_1_s (
+    .SUM(n60_2),
+    .COUT(n60_1_1),
+    .I0(Count[3]),
+    .I1(GND),
+    .I3(CW),
+    .CIN(n61_1_1) 
+);
+defparam n60_1_s.ALU_MODE=2;
+  ALU n59_1_s (
+    .SUM(n59_2),
+    .COUT(n59_1_1),
+    .I0(Count[4]),
+    .I1(GND),
+    .I3(CW),
+    .CIN(n60_1_1) 
+);
+defparam n59_1_s.ALU_MODE=2;
+  ALU n58_1_s (
+    .SUM(n58_2),
+    .COUT(n58_1_0_COUT),
+    .I0(Count[5]),
+    .I1(GND),
+    .I3(CW),
+    .CIN(n59_1_1) 
+);
+defparam n58_1_s.ALU_MODE=2;
+  INV n32_s2 (
+    .O(n32_6),
+    .I(RESETn_d) 
+);
+  INV CW_5_s1 (
+    .O(CW_5_3),
+    .I(CW) 
+);
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* Rotary_LED */
