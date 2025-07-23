@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="Rotary_LED" Register="22" Alu="6" Lut="10" T_Register="22(22)" T_Alu="6(6)" T_Lut="10(10)"/>
+<Module name="Rotary_LED" Register="76" Alu="6" Lut="131" T_Register="76(76)" T_Alu="6(6)" T_Lut="131(131)"/>

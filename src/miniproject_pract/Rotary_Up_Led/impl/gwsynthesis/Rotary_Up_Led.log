@@ -1,7 +1,9 @@
 GowinSynthesis start
 Running parser ...
-Analyzing Verilog file 'D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Rotary_Up_Led\src\Top.v'
-Compiling module 'Rotary_LED'("D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Rotary_Up_Led\src\Top.v":1)
+Analyzing Verilog file 'D:\Work\Tang 9k\src\miniproject_pract\Rotary_Up_Led\src\Top.v'
+Compiling module 'Rotary_LED'("D:\Work\Tang 9k\src\miniproject_pract\Rotary_Up_Led\src\Top.v":1)
+WARN  (EX3791) : Expression size 26 truncated to fit in target size 25("D:\Work\Tang 9k\src\miniproject_pract\Rotary_Up_Led\src\Top.v":43)
+WARN  (EX3791) : Expression size 26 truncated to fit in target size 25("D:\Work\Tang 9k\src\miniproject_pract\Rotary_Up_Led\src\Top.v":61)
 NOTE  (EX0101) : Current top module is "Rotary_LED"
 [5%] Running netlist conversion ...
 Running device independent optimization ...
@@ -19,6 +21,6 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-[95%] Generate netlist file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Rotary_Up_Led\impl\gwsynthesis\Rotary_Up_Led.vg" completed
-[100%] Generate report file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Rotary_Up_Led\impl\gwsynthesis\Rotary_Up_Led_syn.rpt.html" completed
+[95%] Generate netlist file "D:\Work\Tang 9k\src\miniproject_pract\Rotary_Up_Led\impl\gwsynthesis\Rotary_Up_Led.vg" completed
+[100%] Generate report file "D:\Work\Tang 9k\src\miniproject_pract\Rotary_Up_Led\impl\gwsynthesis\Rotary_Up_Led_syn.rpt.html" completed
 GowinSynthesis finish

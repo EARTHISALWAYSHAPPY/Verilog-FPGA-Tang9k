@@ -1,7 +1,7 @@
-Reading netlist file: "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Rotary_Up_Led\impl\gwsynthesis\Rotary_Up_Led.vg"
-Parsing netlist file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Rotary_Up_Led\impl\gwsynthesis\Rotary_Up_Led.vg" completed
+Reading netlist file: "D:\Work\Tang 9k\src\miniproject_pract\Rotary_Up_Led\impl\gwsynthesis\Rotary_Up_Led.vg"
+Parsing netlist file "D:\Work\Tang 9k\src\miniproject_pract\Rotary_Up_Led\impl\gwsynthesis\Rotary_Up_Led.vg" completed
 Processing netlist completed
-Reading constraint file: "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Rotary_Up_Led\src\Rotary_Up_Led.cst"
+Reading constraint file: "D:\Work\Tang 9k\src\miniproject_pract\Rotary_Up_Led\src\Rotary_Up_Led.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
@@ -21,10 +21,10 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Rotary_Up_Led\impl\pnr\Rotary_Up_Led.power.html" completed
-Generate file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Rotary_Up_Led\impl\pnr\Rotary_Up_Led.pin.html" completed
-Generate file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Rotary_Up_Led\impl\pnr\Rotary_Up_Led.rpt.html" completed
-Generate file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Rotary_Up_Led\impl\pnr\Rotary_Up_Led.rpt.txt" completed
-Generate file "D:\Work\Tang9k-FPGA\Tang-nano-9K-FPGA\src\miniproject_pract\Rotary_Up_Led\impl\pnr\Rotary_Up_Led.tr.html" completed
-Tue Jul 22 21:33:16 2025
+Generate file "D:\Work\Tang 9k\src\miniproject_pract\Rotary_Up_Led\impl\pnr\Rotary_Up_Led.power.html" completed
+Generate file "D:\Work\Tang 9k\src\miniproject_pract\Rotary_Up_Led\impl\pnr\Rotary_Up_Led.pin.html" completed
+Generate file "D:\Work\Tang 9k\src\miniproject_pract\Rotary_Up_Led\impl\pnr\Rotary_Up_Led.rpt.html" completed
+Generate file "D:\Work\Tang 9k\src\miniproject_pract\Rotary_Up_Led\impl\pnr\Rotary_Up_Led.rpt.txt" completed
+Generate file "D:\Work\Tang 9k\src\miniproject_pract\Rotary_Up_Led\impl\pnr\Rotary_Up_Led.tr.html" completed
+Wed Jul 23 15:18:33 2025
 
